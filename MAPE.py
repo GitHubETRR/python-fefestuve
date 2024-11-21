@@ -6,14 +6,14 @@ import max7219
 import json
 import _thread
 
-MAPBOX_TOKEN = 'pk.eyJ1IjoiZmVmZXN0dXZlIiwiYSI6ImNtMmQ4Mmc4bjFjeGwybXE0ZWQ0c2tweHAifQ.LI5CNJcMdZNccxJ8ueiGvg'
+MAPBOX_TOKEN = 'REEMPLAZAR CON TOKEN'
 COORDENADAS_PARADA = (-58.938814, -34.198945)
 
-CSID = 'ETRR Free'
-WIFI_CONTRASENIA = ''
+SSID = 'REEMPLAZAR CON WIFI'
+WIFI_CONTRASENIA = 'REEEMPLAZAR CON CONTRASEÑA'
 
-USERNAME = 'fefestuve'
-KEY = 'aio_rAdb854LKlJcecVzxevkblqOxyHO'
+USERNAME = 'REEMPLAZAR CON USERNAME DE ADAFRUIT IO'
+KEY = 'REEMPLAZAR CON LA KEY'
 
 URL_LATITUD =f'https://io.adafruit.com/api/v2/{USERNAME}/feeds/latitud/data/last'
 URL_LONGITUD = f'https://io.adafruit.com/api/v2/{USERNAME}/feeds/longitud/data/last'
@@ -29,10 +29,10 @@ velocidad = 40000 #metros por hora
 
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
-wifi.connect(CSID, WIFI_CONTRASENIA)
+wifi.connect(SSID, WIFI_CONTRASENIA)
 
 while wifi.isconnected() == False:
-    paCS
+    pass
 
 
 LM35 = ADC(Pin(28))
